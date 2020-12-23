@@ -19,6 +19,8 @@ namespace todo
         public Model(IOptions<Settings> settings)
         {
             _settings = settings;
+
+            this.Database.SetCommandTimeout(100);
         }
 
         public DbSet<Todo> Todos {get; set;}
@@ -29,7 +31,7 @@ namespace todo
 
     public class Todo
     {
-        public Guid Id {get; set;}
+        public int Id {get; set;}
         public string Task {get; set;}
         public bool Completed {get; set;}
     }

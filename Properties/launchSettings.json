@@ -14,7 +14,7 @@
       "environmentVariables": {
         "Key": "Value",
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "DATABASE_CONFIGURATION": "Server=DESKTOP-CHANDRA\\\\TEW_SQLEXPRESS;Database=todo;Trusted_Connection=Yes;"
+        "DATABASE_CONFIGURATION": "Server=(localdb)\\TEW_SQLEXPRESS;Database=todo;Trusted_Connection=Yes;"
       }
     },
     "todo": {
